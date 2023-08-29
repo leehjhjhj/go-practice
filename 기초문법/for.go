@@ -24,7 +24,7 @@ func main() {
 	for _, name := range mushrooms {
 		fmt.Println(name)
 		if name == "머쉬맘" {
-			goto END
+			goto END // END로 이동한다.
 		}
 	}
 	END:
