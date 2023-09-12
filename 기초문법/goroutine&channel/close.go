@@ -19,6 +19,10 @@ func main() {
 	if _, success := <- notice; !success {
 		fmt.Println("공지사항 없음")
 	}
+
+	for i := range notice {
+        fmt.Println(i)
+	} // 그리고 이와 같이 수신자는 채널이 계속 닫혔는지 확인하는 것을 range로 쉽게 표현할 수 있다.
 }
 
 
