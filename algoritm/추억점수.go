@@ -20,5 +20,6 @@ func solution(name []string, yearning []int, photo [][]string) []int {
         }
         result = append(result, point)
     }
+	}
     
     return result
